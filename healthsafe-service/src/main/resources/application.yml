@@ -1,0 +1,20 @@
+server:
+  port: 2051
+
+message: Welcome to Health Safe from local properties file
+
+spring:
+  application:
+    name: HealthSafe
+  config:
+    import: optional:configserver:http://localhost:2050
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: refresh, bus-refresh, beans, env
+
+

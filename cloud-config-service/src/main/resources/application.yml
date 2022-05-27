@@ -1,0 +1,11 @@
+server:
+  port: 2050
+
+spring:
+  application:
+    name: CloudConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/anilkumarb1248/spring-cloud-config-refresh-poc-config-repo
