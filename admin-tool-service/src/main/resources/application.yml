@@ -1,12 +1,12 @@
 server:
-  port: 2051
+  port: 2053
 
-message: Welcome to Health Safe from local properties file
+message: Welcome to Admin Tool from local properties file
 feature-flag: false
 
 spring:
   application:
-    name: HealthSafe
+    name: AdminTool
   config:
     import: optional:configserver:http://localhost:2050
 
@@ -17,5 +17,3 @@ management:
     web:
       exposure:
         include: health, refresh, bus-refresh, beans, env
-
-

@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "5c2bfe90-8e0b-478a-8587-9334e1f6b9e8",
+		"name": "spring-cloud-config-refresh-poc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cloud-config-service",
+			"item": [
+				{
+					"name": "Default Properties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2050/application/default",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2050",
+							"path": [
+								"application",
+								"default"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Specific Branch Properties",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2050/application/default/main",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2050",
+							"path": [
+								"application",
+								"default",
+								"main"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "healthsafe-service",
+			"item": [
+				{
+					"name": "Get Message",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2051/health/message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2051",
+							"path": [
+								"health",
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Feature Flag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2051/health/flag",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2051",
+							"path": [
+								"health",
+								"flag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh GIT Props",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2051/actuator/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2051",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "process-engine-service",
+			"item": [
+				{
+					"name": "Get Message",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2052/process/message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2052",
+							"path": [
+								"process",
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Feature Flag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2052/process/flag",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2052",
+							"path": [
+								"process",
+								"flag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh GIT Props",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2052/actuator/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2052",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin-tool-service",
+			"item": [
+				{
+					"name": "Get Message",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2053/admin/message",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2053",
+							"path": [
+								"admin",
+								"message"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Feature Flag",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2053/admin/flag",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2053",
+							"path": [
+								"admin",
+								"flag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh GIT Props",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2053/actuator/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2053",
+							"path": [
+								"actuator",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -28,5 +28,13 @@ http://localhost:2050/application/default/main    -- To fetch from specific bran
 
 http://localhost:2051/health/message
 http://localhost:2051/health/flag
+http://localhost:2051/actuator/refresh    - Post Operation to get the latest config from the GIT
 
-http://localhost:2051/actuator/refresh
+http://localhost:2052/process/message
+http://localhost:2052/process/flag
+http://localhost:2052/actuator/refresh    - Post Operation to get the latest config from the GIT
+
+http://localhost:2053/admin/message
+http://localhost:2053/admin/flag
+http://localhost:2053/actuator/refresh    - Post Operation to get the latest config from the GIT
+
