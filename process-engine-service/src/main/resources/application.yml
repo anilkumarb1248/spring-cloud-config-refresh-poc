@@ -9,12 +9,33 @@ spring:
     name: ProcessEngine
   config:
     import: optional:configserver:http://localhost:2050
-
+  cloud:
+    bus:
+      refresh:
+        enabled: true
+      env:
+        enabled: true
+    stream:
+      kafka:
+        binder:
+          autoAddPartitions: true
+  kafka:
+    bootstrap-servers: http://localhost:9092
+    
 management:
   security:
     enabled: false
   endpoints:
     web:
       exposure:
-        include: health, refresh, bus-refresh, beans, env
+        include: health, refresh, bus-refresh
+        
+endpoints: 
+  spring: 
+    cloud: 
+      bus: 
+        refresh: 
+          enabled: true
+        env:
+          enabled: true
 
