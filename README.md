@@ -38,3 +38,8 @@ http://localhost:2053/admin/message
 http://localhost:2053/admin/flag
 http://localhost:2053/actuator/refresh    - Post Operation to get the latest config from the GIT
 
+
+Bus Refresh (Hit any of the URL to refresh the properties in all the services)
+http://localhost:2051/actuator/busrefresh
+http://localhost:2052/actuator/busrefresh
+http://localhost:2053/actuator/busrefresh
