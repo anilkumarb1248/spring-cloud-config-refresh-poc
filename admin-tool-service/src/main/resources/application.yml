@@ -1,12 +1,12 @@
 server:
   port: 2053
 
-message: Welcome to Admin Tool from local properties file
+message: Welcome to Admin Tool Service from local properties file
 feature-flag: false
 
 spring:
   application:
-    name: AdminTool
+    name: Admin-Service
   config:
     import: optional:configserver:http://localhost:2050
   cloud:

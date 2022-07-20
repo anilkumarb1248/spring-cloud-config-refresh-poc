@@ -6,7 +6,7 @@ feature-flag: false
 
 spring:
   application:
-    name: ProcessEngine
+    name: ProcessEngineService
   config:
     import: optional:configserver:http://localhost:2050
   cloud:

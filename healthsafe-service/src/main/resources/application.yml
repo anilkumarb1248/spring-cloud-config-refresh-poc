@@ -6,7 +6,7 @@ feature-flag: false
 
 spring:
   application:
-    name: HealthSafe
+    name: HealthSafeService
   config:
     import: optional:configserver:http://localhost:2050
   cloud:

@@ -8,7 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/anilkumarb1248/spring-cloud-config-refresh-poc-config-repo
+          #To configure local git repository
+          uri: file:///D:/Workspace/spring-cloud-config-refresh-poc/spring-cloud-config-refresh-poc-config-repo
+          #To configure remote git repository
+          #uri: https://github.com/anilkumarb1248/spring-cloud-config-refresh-poc-config-repo
     bus:
       enabled: true
   kafka:
